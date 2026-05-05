@@ -1,0 +1,41 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/sick/protos/SickLms291.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.17378379870354613 0.0905631473514947 0.9806107829561925 2.1967576945706755
+  position 6.420415388291569 -9.240936167386137 4.50485885368353
+}
+Pioneer3at {
+  name "P3AT"
+  controller "<extern>"
+  extensionSlot [
+    SickLms291 {
+      translation 0 0 0.21
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+  ]
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallHeight 0.5
+}

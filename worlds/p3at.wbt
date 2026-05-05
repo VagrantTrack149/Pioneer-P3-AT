@@ -1,0 +1,113 @@
+#VRML_SIM R2025a utf8
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/sick/protos/SickLms291.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.1 0.1 0.9 2.2
+  position 5 -5 2
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+Pioneer3at {
+  name "P3AT"
+  controller "<extern>"
+  extensionSlot [
+    SickLms291 {
+      translation 0 0 0.35
+      name "Sick LMS 291"
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+      name "gps"
+    }
+  ]
+}
+CardboardBox {
+  translation 4 -1.2 0.3
+  name "box_12"
+}
+CardboardBox {
+  translation -3.58 -1.22 0.3
+  name "cardboard box(1)"
+}
+CardboardBox {
+  translation 0.01 6.4 0.3
+  name "cardboard box(2)"
+}
+CardboardBox {
+  translation 0.5 2.01 0.3
+  name "box_11"
+}
+CardboardBox {
+  translation -5 6.3 0.3
+  name "box_13"
+}
+CardboardBox {
+  translation -3 4 0.3
+  name "box_14"
+}
+CardboardBox {
+  translation 5 -2 0.3
+  name "box_15"
+}
+CardboardBox {
+  translation 6 0 0.3
+  name "box_16"
+}
+CardboardBox {
+  translation -6 -1 0.3
+  name "box_17"
+}
+CardboardBox {
+  translation 2 4 0.3
+  name "box_18"
+}
+CardboardBox {
+  translation -2 -6.09 0.3
+  name "box_19"
+}
+CardboardBox {
+  translation 7 2 0.3
+  name "box_20"
+}
+CardboardBox {
+  translation -7 -2 0.3
+  name "box_21"
+}
+CardboardBox {
+  translation 7.76 -4 0.3
+  name "box_22"
+}
+CardboardBox {
+  translation -4 3 0.3
+  name "box_23"
+}
+CardboardBox {
+  translation 0 -4 0.3
+  name "box_24"
+}
+CardboardBox {
+  translation 8 1 0.3
+  name "box_25"
+}
+CardboardBox {
+  translation -8 2 0.3
+  name "box_26"
+}
+CardboardBox {
+  translation 3.87 -4.5 0.3
+  name "box_27"
+}
